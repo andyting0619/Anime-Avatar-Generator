@@ -10,7 +10,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 model = Generator()
 model.load_state_dict(torch.load(
-    "anime-avatar-generator/weight.pt", map_location=device))
+    "weight.pt", map_location=device))
 model.to(device)
 model.eval()
 
@@ -234,3 +234,4 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Base(), elem_id="main-container")
 
 if __name__ == "__main__":
     demo.launch(share=True, show_error=True)
+
