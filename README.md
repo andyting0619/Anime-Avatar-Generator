@@ -1,4 +1,4 @@
-# Anime-Avatar-Generator
+# Anime Avatar Generator
 - A simple web application that transforms selfies into anime-style avatars using AnimeGAN V2.
 # Requirement
 - Python 3.10
